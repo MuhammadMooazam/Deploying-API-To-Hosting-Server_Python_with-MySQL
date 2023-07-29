@@ -41,7 +41,7 @@ Overall, PythonAnywhere simplifies the process of hosting and deploying Python a
 ![image](https://github.com/MuhammadRaheelNaseem/Flask-API-Development/assets/63813881/71a18d96-d8a8-4e19-93e2-321b2a612dac)
 ![image](https://github.com/MuhammadRaheelNaseem/Flask-API-Development/assets/63813881/8a7aa96c-b41c-4c3c-9b0b-ed877d790b28)
 
-# Paste this API script into flasK_app.py and don't forgot to comment app.run() in last line of the script
+# Paste this API script into flask_app.py file, change the database connections with your values and don't forgot to comment app.run() in last line of the script
 ```Python
 from flask import Flask, request, jsonify
 import mysql.connector
@@ -50,10 +50,10 @@ app = Flask(__name__)
 
 # MySQL configurations
 db = mysql.connector.connect(
-    host='your_mysql_host',
-    user='your_mysql_user',
-    password='your_mysql_password',
-    database='your_mysql_database'
+    host='[your_mysql_host]',
+    user='[your_mysql_user]',
+    password='[your_mysql_password]',
+    database='[your_mysql_database]'
 )
 
 # Create a table in the database if it doesn't exist
